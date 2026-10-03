@@ -1,0 +1,22 @@
+/* ============================================
+   Mermaid Diagram - Fit to Container Width
+   ============================================ */
+
+/* Target the code block wrapper Obsidian uses for mermaid */
+.block-language-mermaid {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* Target all possible SVG selectors in Obsidian's mermaid rendering */
+svg[id^="mermaid"],
+.mermaid svg,
+.block-language-mermaid svg,
+.markdown-preview-view .mermaid svg,
+.markdown-reading-view .mermaid svg,
+.markdown-rendered .mermaid svg,
+.markdown-preview-view .block-language-mermaid svg,
+.markdown-reading-view .block-language-mermaid svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
